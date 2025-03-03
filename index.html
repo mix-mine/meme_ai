@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Генератор мемов с ИИ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Генератор мемов с ИИ</h1>
+        <p>Создавайте мемы на основе актуальных трендов!</p>
+
+        <form id="memeForm">
+            <label for="template">Выберите шаблон:</label>
+            <select id="template">
+                <option value="181913649">Drake Hotline Bling</option>
+                <option value="112126428">Distracted Boyfriend</option>
+                <option value="87743020">Two Buttons</option>
+            </select>
+
+            <label for="topText">Верхний текст:</label>
+            <input type="text" id="topText" placeholder="Введите текст" required>
+
+            <label for="bottomText">Нижний текст:</label>
+            <input type="text" id="bottomText" placeholder="Введите текст" required>
+
+            <button type="submit">Создать мем</button>
+        </form>
+
+        <div id="memeResult" class="hidden">
+            <h2>Ваш мем:</h2>
+            <img id="memeImage" src="" alt="Ваш мем">
+            <button id="shareBtn">Поделиться</button>
+            <button id="premiumBtn">Купить премиум (₴50)</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
